@@ -1,0 +1,45 @@
+{
+    "metadata": {
+      "input_documents": ["AD1.pdf", "AD2.pdf", "AD3.pdf"],
+      "persona": "Military Aviation Historian",
+      "job_to_be_done": "Analyze the militarization of aviation technology and its impact on early 20th century warfare"
+    },
+    "extracted_sections": [
+      {
+        "document": "AD1.pdf",
+        "section_title": "FLIGHT—THOUGHTS, TRIALS, AND SUCCESSES",
+        "importance_rank": 1,
+        "page_number": 1
+      },
+      {
+        "document": "AD2.pdf",
+        "section_title": "Montgolfier Brothers’ First Hot‑Air Balloon Flights",
+        "importance_rank": 2,
+        "page_number": 1
+      },
+      {
+        "document": "AD3.pdf",
+        "section_title": "Cayley’s 1804 Whirling‑Arm Experiments and Glider",
+        "importance_rank": 3,
+        "page_number": 1
+      }
+    ],
+    "subsection_analysis": [
+      {
+        "document": "AD1.pdf",
+        "refined_text": "Aerospace power includes both civilian and military aerospace communities. Without the aeronautical advances brought about by military applications of aircraft, technology might not have progressed beyond the Wright Flyer level.",
+        "page_number": 1
+      },
+      {
+        "document": "AD2.pdf",
+        "refined_text": "On October 15, 1783, Pilâtre de Rozier and the Marquis d'Arlandes made the first free hot‑air balloon flight, demonstrating controlled ascent and descent via heated air.",
+        "page_number": 1
+      },
+      {
+        "document": "AD3.pdf",
+        "refined_text": "In 1804, Sir George Cayley's whirling‑arm experiments measured lift and drag, leading to his first model fixed‑wing glider—foundational to heavier‑than‑air aircraft.",
+        "page_number": 1
+      }
+    ]
+  }
+  

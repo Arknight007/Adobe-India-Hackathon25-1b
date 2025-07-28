@@ -1,0 +1,56 @@
+{
+    "metadata": {
+      "input_documents": ["AD3.pdf", "AD4.pdf"],
+      "persona": "Military Aviation Historian",
+      "job_to_be_done": "Analyze the militarization of aviation technology and its impact on early 20th century warfare"
+    },
+    "extracted_sections": [
+      {
+        "document": "AD3.pdf",
+        "section_title": "Cayley’s 1804 Whirling‑Arm Experiments and Glider",
+        "importance_rank": 1,
+        "page_number": 1
+      },
+      {
+        "document": "AD3.pdf",
+        "section_title": "Henson and Stringfellow’s Steam‑Powered Model",
+        "importance_rank": 2,
+        "page_number": 2
+      },
+      {
+        "document": "AD4.pdf",
+        "section_title": "Blimps, Dirigibles, and the Rise of Powered Airships",
+        "importance_rank": 3,
+        "page_number": 1
+      },
+      {
+        "document": "AD4.pdf",
+        "section_title": "Propeller‑Synchronized Machine Guns",
+        "importance_rank": 4,
+        "page_number": 2
+      }
+    ],
+    "subsection_analysis": [
+      {
+        "document": "AD3.pdf",
+        "refined_text": "Cayley’s experiments established lift measurement techniques and a practical fixed‑wing glider, underpinning all subsequent aircraft design.",
+        "page_number": 1
+      },
+      {
+        "document": "AD3.pdf",
+        "refined_text": "In 1842 Henson designed a steam‑powered, propeller-driven aircraft model; though it never flew, it demonstrated the feasibility of mechanical propulsion.",
+        "page_number": 2
+      },
+      {
+        "document": "AD4.pdf",
+        "refined_text": "Flexible and rigid airships (blimps and Zeppelins) provided the first powered, steerable aircraft used in wartime for reconnaissance and strategic bombing.",
+        "page_number": 1
+      },
+      {
+        "document": "AD4.pdf",
+        "refined_text": "The adaptation of machine guns—first swivel-mounted and then synchronized to fire through the propeller arc—revolutionized air combat tactics.",
+        "page_number": 2
+      }
+    ]
+  }
+  

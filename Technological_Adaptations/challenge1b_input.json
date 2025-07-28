@@ -1,0 +1,29 @@
+{
+    "challenge_info": {
+      "challenge_id": "round_1b_001",
+      "test_case_name": "Technological_Adaptations"
+    },
+    "documents": [
+      { "filename": "AD3.pdf", "title": "Heavier‑than‑Air Flight Pioneers" },
+      { "filename": "AD4.pdf", "title": "Developments for Military Applications" }
+    ],
+    "persona": {
+      "role": "Military Aviation Historian",
+      "expertise_areas": ["military history", "aerial warfare", "defense technology", "strategic applications"],
+      "focus_keywords": ["military", "warfare", "combat", "strategy", "defense", "tactics", "observation", "reconnaissance"],
+      "experience_level": "expert",
+      "domain": "military history"
+    },
+    "job_to_be_done": {
+      "task_description": "Analyze the militarization of aviation technology and its impact on early 20th century warfare",
+      "key_objectives": [
+        "Document the transition from civilian to military aviation",
+        "Analyze early military applications and tactics",
+        "Assess the strategic impact of aerial reconnaissance and bombing",
+        "Identify technological adaptations for military use"
+      ],
+      "expected_output_type": "military history analysis",
+      "priority_themes": ["military applications", "warfare tactics", "strategic impact", "technological adaptation"]
+    }
+  }
+  

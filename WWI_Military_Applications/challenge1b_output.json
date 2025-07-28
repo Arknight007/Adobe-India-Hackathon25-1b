@@ -1,0 +1,45 @@
+{
+    "metadata": {
+      "input_documents": ["AD4.pdf"],
+      "persona": "Military Aviation Historian",
+      "job_to_be_done": "Analyze the militarization of aviation technology and its impact on early 20th century warfare"
+    },
+    "extracted_sections": [
+      {
+        "document": "AD4.pdf",
+        "section_title": "WORLD WAR I",
+        "importance_rank": 1,
+        "page_number": 1
+      },
+      {
+        "document": "AD4.pdf",
+        "section_title": "German Lieutenant Dressler’s First Bombing Raid",
+        "importance_rank": 2,
+        "page_number": 2
+      },
+      {
+        "document": "AD4.pdf",
+        "section_title": "Swivel‑Mounted Machine Guns and Aerial Combat",
+        "importance_rank": 3,
+        "page_number": 2
+      }
+    ],
+    "subsection_analysis": [
+      {
+        "document": "AD4.pdf",
+        "refined_text": "Early in World War I, balloons and airplanes were used for observation over the front lines, providing critical reconnaissance data on enemy positions.",
+        "page_number": 1
+      },
+      {
+        "document": "AD4.pdf",
+        "refined_text": "On August 29, 1914, German Lieutenant Hermann Dressler dropped four bombs on Paris from a Rumpler Taube, inaugurating strategic aerial bombing.",
+        "page_number": 2
+      },
+      {
+        "document": "AD4.pdf",
+        "refined_text": "Pilots began mounting swivel‑mounted machine guns, and later synchronized fuselage‑mounted guns, marking the advent of true aerial combat tactics.",
+        "page_number": 2
+      }
+    ]
+  }
+  
