@@ -1,7 +1,8 @@
 # Adobe-India-Hackathon25-1b
 [![Docker Image](https://img.shields.io/badge/docker-ready-blue)](https://www.docker.com/) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Schema Version](https://img.shields.io/badge/schema-draft--07-orange)](sample_dataset/schema/output_schema.json)
 
- Overview: Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases. Multi-Collection PDF Analysis
+### Overview
+Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases. Multi-Collection PDF Analysis
 
 ## Project Structure
 ```
