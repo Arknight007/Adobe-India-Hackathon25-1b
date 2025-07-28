@@ -1,4 +1,6 @@
 # Adobe-India-Hackathon25-1b
+Submission for Adobe India Hackathon 2025 challenge 1a
+
 [![Docker Image](https://img.shields.io/badge/docker-ready-blue)](https://www.docker.com/) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Schema Version](https://img.shields.io/badge/schema-draft--07-orange)](sample_dataset/schema/output_schema.json)
 
 ### Overview
@@ -6,21 +8,31 @@ Advanced PDF analysis solution that processes multiple document collections and 
 
 ## Project Structure
 ```
+Challenge_1b/
+├── Foundations_of_Aviation/
+│   ├── PDFs/
+│   │   ├── AD1.pdf
+│   │   ├── AD2.pdf
+│   │   └── AD3.pdf
+│   ├── challenge1b_input.json
+│   └── challenge1b_output.json
+├── Technological_Adaptations/
+│   ├── PDFs/
+│   │   ├── AD3.pdf
+│   │   └── AD4.pdf
+│   ├── challenge1b_input.json
+│   └── challenge1b_output.json
+├── WWI_Military_Applications/
+│   ├── PDFs/
+│   │   └── AD4.pdf
+│   ├── challenge1b_input.json
+│   └── challenge1b_output.json
+├── extract_and_rank.py     # Core extraction & ranking logic
+├── runner.py               # Orchestrates each collection’s processing
+├── requirements.txt
+├── Dockerfile
+└── README.md               # This file
 
-Challenge\_1b/
-├── Collection\_1/                    # Travel Planning
-│   ├── PDFs/                        # South of France guides
-│   ├── challenge1b\_input.json      # Input configuration
-│   └── challenge1b\_output.json     # Analysis results
-├── Collection\_2/                    # Adobe Acrobat Learning
-│   ├── PDFs/                        # Acrobat tutorials
-│   ├── challenge1b\_input.json      # Input configuration
-│   └── challenge1b\_output.json     # Analysis results
-├── Collection\_3/                    # Recipe Collection
-│   ├── PDFs/                        # Cooking guides
-│   ├── challenge1b\_input.json      # Input configuration
-│   └── challenge1b\_output.json     # Analysis results
-└── README.md                        # This file
 
 ````
 
