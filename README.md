@@ -1,6 +1,5 @@
 # Adobe-India-Hackathon25-1b
 [![Docker Image](https://img.shields.io/badge/docker-ready-blue)](https://www.docker.com/) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Schema Version](https://img.shields.io/badge/schema-draft--07-orange)](sample_dataset/schema/output_schema.json)
-### Submission for Adobe India Hackathon 2025 challenge 1a
 
 ## Overview
 Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases. Multi-Collection PDF Analysis
@@ -26,49 +25,23 @@ Challenge\_1b/
 ````
 
 ```mermaid
-flowchart TD
-  subgraph Container
-    A[Docker Container<br/>(pdf-multi-analyzer)] 
-    A --> B[runner.py]
-  end
+graph TD
+    A[Container: pdf-multi-analyzer] --> B[runner.py]
+    B --> C1[Read Collection_1 Input]
+    B --> C2[Read Collection_2 Input]
+    B --> C3[Read Collection_3 Input]
+    C1 --> D1[Extract & Rank Collection_1]
+    C2 --> D2[Extract & Rank Collection_2]
+    C3 --> D3[Extract & Rank Collection_3]
+    D1 --> Z[Write Collection_1 Output]
+    D2 --> Z[Write Collection_2 Output]
+    D3 --> Z[Write Collection_3 Output]
+    Z --> U[All Collections Processed]
 
-  B --> C1[Read Collection_1 Input<br/>(challenge1b_input.json)]
-  B --> C2[Read Collection_2 Input<br/>(challenge1b_input.json)]
-  B --> C3[Read Collection_3 Input<br/>(challenge1b_input.json)]
-
-  subgraph Coll1 [Collection_1<br/>(Travel Planning)]
-    C1 --> P1[Load PDFs from PDFs/]
-    P1 --> E1[extract_and_rank.py]
-    E1 --> H1[extract_headings()] 
-    H1 --> R1[rank_sections()] 
-    R1 --> S1[extract_subsections()] 
-    S1 --> O1[Write challenge1b_output.json]
-  end
-
-  subgraph Coll2 [Collection_2<br/>(Adobe Acrobat Learning)]
-    C2 --> P2[Load PDFs from PDFs/]
-    P2 --> E2[extract_and_rank.py]
-    E2 --> H2[extract_headings()] 
-    H2 --> R2[rank_sections()] 
-    R2 --> S2[extract_subsections()] 
-    S2 --> O2[Write challenge1b_output.json]
-  end
-
-  subgraph Coll3 [Collection_3<br/>(Recipe Collection)]
-    C3 --> P3[Load PDFs from PDFs/]
-    P3 --> E3[extract_and_rank.py]
-    E3 --> H3[extract_headings()] 
-    H3 --> R3[rank_sections()] 
-    R3 --> S3[extract_subsections()] 
-    S3 --> O3[Write challenge1b_output.json]
-  end
-
-  O1 --> Z[Completion]
-  O2 --> Z
-  O3 --> Z
-
-  Z --> U[Output JSON files ready in each collection folder]
 ```
+
+
+---
 
 ## Collections
 
@@ -90,6 +63,58 @@ flowchart TD
 - **Task**: Prepare vegetarian buffet-style dinner menu for corporate gathering  
 - **Documents**: 9 cooking guides  
 
+---
+
+## Input/Output Format
+
+### Input JSON Structure
+```json
+{
+  "challenge_info": {
+    "challenge_id": "round_1b_XXX",
+    "test_case_name": "specific_test_case"
+  },
+  "documents": [
+    {
+      "filename": "doc.pdf",
+      "title": "Title"
+    }
+  ],
+  "persona": {
+    "role": "User Persona"
+  },
+  "job_to_be_done": {
+    "task": "Use case description"
+  }
+}
+```
+
+### Output JSON Structure
+ ```json
+{
+  "metadata": {
+    "input_documents": ["list"],
+    "persona": "User Persona",
+    "job_to_be_done": "Task description"
+  },
+  "extracted_sections": [
+    {
+      "document": "source.pdf",
+      "section_title": "Title",
+      "importance_rank": 1,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "source.pdf",
+      "refined_text": "Content",
+      "page_number": 1
+    }
+  ]
+}
+```
+
 
 ## Key Features
 
@@ -97,13 +122,6 @@ flowchart TD
 * Importance ranking of extracted sections
 * Multi-collection document processing
 * Structured JSON output with metadata
-
-## Extensibility
-
-* Integrate OCR (Tesseract + pdf2image) for scanned documents
-* Use regex or machine-learning techniques to detect numbered headings
-* Parameterize font-size thresholds for multi-language support
-
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
